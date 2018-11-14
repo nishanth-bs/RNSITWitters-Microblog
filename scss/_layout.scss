@@ -1,0 +1,23 @@
+//main: ./main.scss
+
+///////////////////////////////////////////
+// index.php --> logged_in
+
+.container{
+  display: flex;
+}
+.design{
+  height: 100vh;
+  flex: 1;
+  background-image: linear-gradient(to top right, rgba($color-primary-1,.8),rgba($color-primary-4,.8)),url("./../img/plant.jpg");
+  background-position:left;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.login{
+  height: 100vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}

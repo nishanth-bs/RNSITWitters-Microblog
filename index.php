@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();/*
 if(!isset($_SESSION['index'])){
     $_SESSION['index'] = 1;//remember to unset before going to another page
@@ -12,7 +12,7 @@ $_SESSION['logged_in']=false;
 	<!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS 
+    <!-- Bootstrap CSS
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="customizedStyleSheet.css">
@@ -22,6 +22,9 @@ $_SESSION['logged_in']=false;
 
 
 <body>
+	<header class="header">
+		
+	</header>
 <div class="container">
 	<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
 		<div class="navbar-header">
@@ -33,8 +36,8 @@ $_SESSION['logged_in']=false;
 				<span class="icon-bar"></span>
 			</button>
 		</div>
-		
-		
+
+
 	</nav>
 	 <div class="well col-sm-offset-2 col-sm-9" >
 		 <div class="col-sm-offset-1 col-sm-8">
@@ -58,7 +61,7 @@ $_SESSION['logged_in']=false;
 		    	endif;
 				?>
 			</form>
-				
+
 			<br><strong>New to RNSIT Witters? <a href="signupnow.php"<?php /*unset($_SESSION['index']);*/ ?>>Signup now »</a></strong><br>
 	 	</div>
 	 </div>

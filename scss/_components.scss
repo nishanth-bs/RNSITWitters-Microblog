@@ -1,0 +1,114 @@
+//main: ./main.scss
+
+////////////////////////////////////////////
+//index.php
+.design{
+  position: relative;
+
+  &__list{
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+  }
+
+  &__list-item{
+    font-weight: 800;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 8rem;
+    white-space: nowrap;
+
+  }
+}
+
+.login{
+  position: relative;
+  &__box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid $color-primary-1;
+    border-radius: .3rem;
+    height: 80vh;
+    min-width: 60%;
+    color: var(--color-grey-light-4);
+
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    font-size: 2rem;
+    padding: 1rem;
+    &--flex{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__text{
+    color: #000;
+    &--h1{
+      display: block;
+      font-weight: 800;
+      font-size: 2.2rem;
+      margin: 1rem 1rem;
+    }
+    &--h4{
+      display: block;
+      font-weight: 600;
+      font-size: 1.8rem;
+      margin: 0rem 1rem .5rem 1rem
+    }
+  }
+
+  &__input{
+    margin: 2rem;
+    padding: 1rem;
+    border: 1px solid $color-primary-3;
+    border-radius: .2rem;
+    transition: all 0.2s;
+
+    &:focus{
+      border: 1px solid $color-primary-4;
+      box-shadow: 0 .3rem .5rem rgba(0,0,0,0.4);
+      color: #000;
+      font-weight: 400;
+    }
+    &::-webkit-input-placeholder{
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__btn{
+    margin: 2rem;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 .5rem 0.7rem rgba(0,0,0,0.5);
+    transition: all 0.2s;
+    &:active{
+      box-shadow: 0 .3rem .5rem rgba(0,0,0,0.6);
+      transform: translateY(.2rem);
+    }
+
+    &--blue{
+      background-color: $color-primary-3;
+      color: #fff;
+    }
+    &--white{
+      background-color: #fff;
+      color: $color-primary-3;
+    }
+  }
+}
